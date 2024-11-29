@@ -1,0 +1,458 @@
+@font-face{
+	font-family:Garet;
+	src:url("glr/fuentes/Garet-Book.ttf");
+}
+@font-face{	
+	font-family:lemonlight;
+	src:url("glr/fuentes/LEMONMILK-Light.otf");
+}
+@font-face{
+font-family:lemon;
+src:url("glr/fuentes/LEMONMILK-Medium.otf");
+}
+@font-face{
+font-family:lemonX;
+src:url("glr/fuentes/LEMONMILK-Bold.otf");
+}
+@font-face{
+font-family:hogbine;
+src:url("glr/fuentes/Hogbine.otf");
+}
+ul, ol{
+	list-style:none;
+}
+body{
+	margin:0;
+}
+header{
+	display:flex;
+	height:125px;
+	width:100%;
+	background-color:#1f191a;
+	margin-bottom:-0.5%;
+}
+.logo{
+margin-top:3%;
+margin:auto;	
+}
+/*----menu desplgable---*/
+.desp {
+	background-color:#1f191a;
+}
+.nav > li{
+	float:left;
+	margin-left:5%;
+	margin-right:5%;
+	
+	justify-content:space-evenly;
+}
+.nav li ul{
+	display:none;
+	position:absolute;
+	
+}
+.nav li:hover> ul {
+	display:block;
+}
+/*termina el menu desplgable */
+nav{
+	width:80%;
+	height:auto;
+	display:flex;
+	justify-content:space-around;
+	margin:auto;
+	flex-direction:column;
+	
+}
+.navup{
+	
+	justify-content:space-around;
+	
+	margin-bottom:2%;
+	
+}
+.navdown{
+	display:flex;
+	/*justify-content:space-around;*/
+}
+.navdown a{
+	margin-right:15%;
+	margin-left:15%;
+}
+a:link, a:visited{
+	text-decoration:none;
+	color:grey;
+	transition: all 0.5s; 
+	font-family:Garet, arial;
+}
+a:hover{
+	color:white;
+}
+p{
+	font-family:arial, calibri, tahoma;
+	
+}
+
+.destacado{
+
+width:100%;
+height:auto;	
+display:flex;
+justify-content:space-around;
+margin-bottom:1%;
+}
+.prenda img{
+height:85%;	
+width:100%;
+
+}
+
+.prenda{
+	display:flex;
+	width:20%;
+	height:autopx;
+	min-width:20%;
+	flex-direction:column;
+}
+.prenda p{
+	margin:1%;
+	
+}
+.nombre{
+	font-family:lemon;
+}
+.precio {
+	font-family: arial;
+	
+}
+.cuotas{
+	font-family:lemonlight;
+}
+h2{
+	font-family:lemonX;
+	font-size:50px;
+	text-align:left;
+	margin-left:2%;
+}
+h1{
+	font-family:lemonX;
+	font-size:50px;
+	text-align:center;
+	
+}
+.td2 {
+background-color:#545454;	
+	color:white;
+}
+td{
+	background-color:#9c9a9a;
+	text-align:center;
+}
+table{
+	height:200px;
+	width:500;
+	font-family:arial, tahoma;
+
+}
+/*titulo de la tabla*/
+.tarjtalles h2{
+	text-align:left;
+	font-size:50px;
+}
+/*div de tabla y foto*/
+.talles{
+	display:flex;
+	height:200px;
+}
+.columnas{
+	display:flex;
+	justify-content:space-around;
+
+}
+
+.nosotros{
+	width:100%;
+	height:auto;
+	display:flex;
+	justify-content:space-around;
+	align-content:center;
+	margin:auto;
+	
+}
+.texto{
+	background-color:;
+	width:45%;
+	height:auto;
+}
+footer{
+	display:flex;
+	height:auto;
+	background-color:#1f191a;
+	
+}
+footer p{
+	color:white;
+}
+.logo2{
+
+
+	height:auto;
+	width:20%;
+}
+.iconos{
+	display:flex;
+	margin-left:5%;
+	height:auto;
+	align-content:center;
+	
+}
+.iconos img{
+	margin:auto;
+	width:20%;
+	height:40%;
+}
+.redes{
+	display:flex;
+	height:auto;
+	width:40%;
+	
+	margin:auto;
+	justify-content:space-evenly;
+}
+.redes a{
+	color:white;
+	text-decoration:underline;
+}
+.papatalle{
+	height:auto;
+	width:100%;
+	display:flex;
+	justify-content:space-evenly;
+
+}
+.tarjtalles{
+	height:auto;
+	width:48%;
+	
+}
+.tarjtalles2{
+	height:auto;
+	width:50%;
+	margin:auto;
+}
+.fila1{
+	
+	width:100%;
+	height:auto;
+	display:flex;
+	justify-content:space-around;
+	margin:auto;
+	margin-bottom:2%;
+	margin-top:2%;
+}
+.fila2{
+	width:100%;
+	height:auto;
+	display:flex;
+	justify-content:space-around;
+	margin-bottom:1%;
+}
+.imagen-container{
+	position:relative;
+	width:319px;
+	height:300px;
+	
+}
+
+.imagen-normal2 {
+    width:219px;
+	height:330px;
+    object-fit: cover;
+}
+.imagen-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:219px;
+	height:330px;
+    object-fit: cover;
+    opacity: 0; 
+    transition: opacity 0.6s ease;
+}
+.imagen-container:hover .imagen-hover {
+    opacity: 1;
+}
+.imagen-container:hover .imagen-normal  {
+    opacity: 0;
+}
+.prenda-pantalon{
+	display:flex;
+	width:330px;
+	height:400px;
+	min-width:20%;
+	flex-direction:column;
+	
+}
+
+.prenda-pantalon img{
+		
+	width:319px;
+	height:300px;
+	object-fit: cover;
+}
+.prenda-pantalon p{
+	margin:1%;
+}
+
+.pantalon-container{
+	position:relative;
+	height:300;
+	width:319;
+}
+
+.prenda-pantalon:hover .imagen-hover  {
+    opacity: 1;
+}
+.prenda-pantalon:hover .imagen-normal {
+    opacity: 0;
+}
+
+.cuidado{
+	height:auto;
+	width:33%;
+	
+}
+.cuidado ul{
+	list-style-type: square;
+	font-family:lemonlight;
+	height:auto;
+	width:93%;
+}
+.listas{
+	display:flex;
+	height:auto;
+	width:100%;
+	margin:auto;
+	justify-content:space-evenly;
+}
+.sale{
+	color:#0089cc;
+}
+.exprecio{
+	text-decoration:line-through;
+}
+.sum{
+	font-family:hogbine;
+	color:#ce1a1a;
+}
+.navdown p{
+	text-align:center;
+}
+/*----------------------------------------------*/
+@media screen and (max-width:800px){
+	header,footer{
+		display:flex;
+		flex-direction:column;
+		height:100%;
+		width:100%;
+		justify-content:center;
+		margin:auto;
+	}
+	.navdown{
+		MARGIN:auto;
+		justify-content:center;	
+	}
+	.navdown a{
+		text-align:center;
+		margin-left:1%;
+	}
+	.fila1, .fila2{
+		flex-wrap:wrap;
+	}
+		
+	.prenda, prenda-pantalon{
+		min-width:230px;
+		min-height:300;
+		width:230px;
+		margin-top:1%;
+		margin-bottom:2%;
+		margin-right:20%;
+	}
+	.prenda-pantalon{
+		margin-top:2%;
+		margin-bottom:2%;
+	}
+	.nosotros{
+		flex-direction:column;
+	}
+	.yo img{
+		  object-fit: cover;
+			width:370px;
+	}
+	.texto{
+		width:100%;
+		margin:auto;
+	}
+	.papatalle{
+		display:flex;
+	flex-direction:column;
+	}
+	.tarjtalles{
+		diay:flex;
+		flex-direction:column;
+	}
+	.tarjtalles2{
+		margin-right:100%;
+	
+	}
+	table{
+		display:flex;
+		width:20%;
+	}
+	talles{
+		flex-direction:column;
+	}
+	.talles .pantalon{
+		margin-top:40%;
+		
+	}
+	.tarjtalles2 .talleboxy{
+		width:90%;
+	}
+		.destacado{
+			flex-direction:column;
+		}
+	h1{
+		font-size:40px;
+	}
+	.navup{
+		width:63%;
+		margin-left:10%;
+		
+	}
+	li{
+		text-align:center;
+	}
+		.logo2{
+			margin-left:34%;
+			
+		}
+	.redes{
+		width:100%;
+		margin-top:5%;
+	}
+	.listas{
+		flex-direction:column;
+		
+	}
+	.cuidado{
+		width:90%;
+		
+	}
+	.listas li{
+		text-align:left;
+	}
+	.destacado{
+		margin-left:9%;
+	}
+}
